@@ -12,10 +12,15 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', function(){
     //dichiariamo il div dove stamperemo i nostri quadrati
     const playGround = document.getElementById('playground');
-    
+
 });
 
 //funzione per stampare i quadrati
 function drawSquare(){
-
+    //creiamo il div che diventerà un quadrato
+    const square = document.createElement('div');
+    //aggiungiamo la classe con i bordi per vedere il div
+    square.classList.add('square');
+    //diamo una dimensione al div per farlo diventare un quadrato
+    square.style.width = //abbiamo bisogno di sapere il numero di caselle da creare
 };
