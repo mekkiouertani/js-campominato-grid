@@ -22,8 +22,11 @@ h1 span{
 #playground{
     min-height: 600px;
     min-width: 600px;
-    background-color: rgb(71, 71, 71);
-
+    background: hsla(335, 91%, 70%, 1);
+    background: linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
+    
     display: flex;
     flex-wrap: wrap;
 }
@@ -42,7 +45,11 @@ button span.d-block{
     text-shadow: 2px 2px 8px #9bedab;
 }
 .square{
-    border: 2px solid white;
+    border: 2px solid #f0f0f0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .active{
     background: hsla(13, 93%, 67%, 1);
