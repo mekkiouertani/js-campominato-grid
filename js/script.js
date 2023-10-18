@@ -22,7 +22,6 @@ btn.addEventListener('click', function(){
     //creiamo il ciclo for per far stampare i 100 quadratini
     for (let i = 0; i < numSquare; i++){
         let square = drawSquare(i, numSquare);
-        console.log(square);
         //appendiamo i quadratini dentro il campo da gioco
         playGround.append(square);
     }
@@ -51,3 +50,4 @@ function drawSquare(squareIndex, numSquare){
     //aggiungiamo il return di square
     return square;
 };
+
