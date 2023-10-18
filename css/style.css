@@ -23,6 +23,9 @@ h1 span{
     min-height: 600px;
     min-width: 600px;
     background-color: rgb(71, 71, 71);
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 button{

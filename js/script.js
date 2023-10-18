@@ -3,7 +3,6 @@
 //creiamo una funzione che creetà i vari quadrati
     //dichiarare il numero di quadratini che vogliamo
     //inserire la formula della radice quadrata
-    //
 //dichiariamo il campo da gioco (playground) dentro il la funzione del click
 //creiamo ciclo for per far stampare i quarati
 //aggiungiamo classi per dare effetti ai quadrati
@@ -21,18 +20,24 @@ btn.addEventListener('click', function(){
     const numSquare = 100;
     
     //creiamo il ciclo for per far stampare i 100 quadratini
-    
-    
+    for (let i = 0; i < numSquare; i++){
+        let square = drawSquare(numSquare);
+        console.log(square);
+        //appendiamo i quadratini dentro il campo da gioco
+        playGround.append(square);
+    }
 });
 
 //funzione per stampare i quadrati
-function drawSquare(){
+function drawSquare(numSquare){
     //formula per il quadrato
     const squareWidth = Math.sqrt(numSquare);
     //creiamo il div che diventerà un quadrato
     const square = document.createElement('div');
-    //aggiungiamo la classe con i bordi per vedere il div
-    square.classList.add('square');
     //diamo una dimensione al div per farlo diventare un quadrato
     square.style.width = `calc(100% / ${squareWidth})`;
+    //aggiungiamo la classe con i bordi per vedere il div
+    square.classList.add('square');
+    //aggiungiamo il return di square
+    return square;
 };
