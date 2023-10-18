@@ -45,6 +45,7 @@ function drawSquare(squareIndex, numSquare){
     square.addEventListener('click', function(){
         square.classList.add('active');
         square.style.color = 'white';
+        console.log('hai cliccato sul numero: ',squareIndex);
     });
 
     //aggiungiamo il return di square
