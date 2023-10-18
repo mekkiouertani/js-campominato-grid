@@ -20,8 +20,9 @@ h1 span{
 }
 
 #playground{
-    min-height: 600px;
-    min-width: 600px;
+    aspect-ratio: 1/1;
+    min-height: 750px;
+    max-height: 750px;
     background: hsla(335, 91%, 70%, 1);
     background: linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
@@ -50,6 +51,7 @@ button span.d-block{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
 }
 .active{
    background-color: rgb(46, 46, 46);
