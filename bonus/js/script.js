@@ -8,14 +8,14 @@
 //aggiungiamo classi per dare effetti ai quadrati
    
 //BONUS
-    //prendiamo il valore del select
+    //prendiamo il valore del selectValue
     //const numSquare diventa let con stringa vuota
     //assegniamo il valore scelto dall'utente a let numSquare 
 
 
  //prendiamo il valore di select
-let select = document.getElementById('select');    
-console.log (select);
+const selectLevel = document.getElementById('select');    
+console.log (selectLevel);
 
 //dichiariamo il bottone dall'html
 const btn = document.querySelector('button');
@@ -26,17 +26,26 @@ btn.addEventListener('click', function(){
     const playGround = document.getElementById('playground');
     //evitiamo di stampare infiniti campi da gioco
     playGround.innerHTML = '';
-    //dichiariamo il numero di quadratini in base alla difficoltà
-    let numSquare = selectValue();
-    console.log(numSquare);
     
+    //dichiariamo il numero di quadratini in base alla difficoltà
+    let numSquare;
+    console.log(numSquare);
+
+    //usiamo il ciclo for per stampare il numero di quadratini corrente
+    if (selectLevel.value === 'easy'){
+        numSquare = 100;
+    } else if (selectLevel.value === 'medium'){
+        numSquare = 89;
+    } else if (selectLevel.value === 'hard'){
+        numSquare = 41;
+    } 
+
     //creiamo il ciclo for per far stampare i 100 quadratini
     for (let i = 0; i < numSquare; i++){
         let square = drawSquare(i, numSquare);
         //appendiamo i quadratini dentro il campo da gioco
         playGround.append(square);
     }
-
 });
 
 //funzione per stampare i quadrati
