@@ -30,6 +30,14 @@ button{
     margin: 40px;
     max-height: 600px;
 }
+button span:first-child{
+    display: inline-block;
+    transform: rotate(-90deg);
+
+}
+button span.d-block{
+    text-shadow: 2px 2px 8px #9bedab;
+}
 .square{
     border: 2px solid white;
 }

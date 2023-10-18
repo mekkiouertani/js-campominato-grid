@@ -12,7 +12,7 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', function(){
     //dichiariamo il div dove stamperemo i nostri quadrati
     const playGround = document.getElementById('playground');
-    console.log(playGround);
+    
 });
 
 //funzione per stampare i quadrati
