@@ -4,8 +4,18 @@
 //dichiariamo il campo da gioco (playground) dentro il la funzione del click
 //creiamo ciclo for per far stampare i quarati
 //aggiungiamo classi per dare effetti ai quadrati
-
-
+    
+//dichiariamo il bottone dall'html
 const btn = document.querySelector('button');
-console.log(btn);
 
+//creiamo evento sul click
+btn.addEventListener('click', function(){
+    //dichiariamo il div dove stamperemo i nostri quadrati
+    const playGround = document.getElementById('playground');
+    console.log(playGround);
+});
+
+//funzione per stampare i quadrati
+function drawSquare(){
+
+};
