@@ -42,6 +42,12 @@ function drawSquare(squareIndex, numSquare){
     //aggiungiamo il numero indice dentro il quadrato
     square.textContent = squareIndex + 1;
 
+    //aggiungiamo evento per quando clicchiamo sul quadratino
+    square.addEventListener('click', function(){
+        square.classList.add('active');
+        square.style.color = 'white';
+    });
+
     //aggiungiamo il return di square
     return square;
 };

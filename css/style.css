@@ -52,8 +52,5 @@ button span.d-block{
     justify-content: center;
 }
 .active{
-    background: hsla(13, 93%, 67%, 1);
-    background: linear-gradient(90deg, hsla(13, 93%, 67%, 1) 0%, hsla(21, 91%, 73%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(13, 93%, 67%, 1) 0%, hsla(21, 91%, 73%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(13, 93%, 67%, 1) 0%, hsla(21, 91%, 73%, 1) 100%);
+   background-color: rgb(46, 46, 46);
 }
